@@ -8,6 +8,7 @@
   body {
     margin: 0;
     padding: 0;
+    display: flex; /* Wrap all content in a flex container */
   }
 
   header,
@@ -20,27 +21,35 @@
 
   header {
     background-color: #f1f1f1;
+    flex: 1; /* Make header flexible and fill space evenly */
   }
 
   nav {
     background-color: #e0e0e0;
+    flex: 1; /* Make nav flexible and fill space evenly */
   }
 
   .side-content {
     background-color: #d0d0d0;
-    float: right; /* Change from float: left to position on the right */
-    width: 20%;
+    width: 20%; /* Set width for side content */
   }
 
   main {
     background-color: #c0c0c0;
-    float: left;
-    width: 60%;
+    flex: 3; /* Make main content flexible and take up 3 times the space */
   }
 
   footer {
     background-color: #b0b0b0;
-    clear: both;
+    flex: 1; /* Make footer flexible and fill space evenly */
+  }
+
+  .side-content:nth-child(1) { /* Style the first side content */
+    order: 1; /* Move the first side content to the left */
+  }
+
+  .side-content:nth-child(2) { /* Style the second side content */
+    order: 3; /* Move the second side content to the right */
   }
 </style>
 </head>
