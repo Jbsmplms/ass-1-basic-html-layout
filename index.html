@@ -8,48 +8,50 @@
   body {
     margin: 0;
     padding: 0;
-    display: flex; /* Wrap all content in a flex container */
   }
 
   header,
   nav,
   .side-content,
   main,
+  .side-content1,
   footer {
     padding: 1em;
+    text-align: center;
   }
 
   header {
-    background-color: #f1f1f1;
-    flex: 1; /* Make header flexible and fill space evenly */
+    background-color: #d43131;
   }
 
   nav {
-    background-color: #e0e0e0;
-    flex: 1; /* Make nav flexible and fill space evenly */
+    background-color: #90d633;
   }
 
   .side-content {
-    background-color: #d0d0d0;
-    width: 20%; /* Set width for side content */
+    background-color: #bd4aa4;
+    float: left;
+    width: 20%;
+    height: 300px;
   }
 
   main {
-    background-color: #c0c0c0;
-    flex: 3; /* Make main content flexible and take up 3 times the space */
+    background-color: #e45db0;
+    float: inline-start;
+    width: 52.88523%;
+    height: 300px;
+  }
+
+  .side-content1 {
+    background-color: #bd4aa4;
+    float: right;
+    width: 20%;
+    height: 300px;
   }
 
   footer {
-    background-color: #b0b0b0;
-    flex: 1; /* Make footer flexible and fill space evenly */
-  }
-
-  .side-content:nth-child(1) { /* Style the first side content */
-    order: 1; /* Move the first side content to the left */
-  }
-
-  .side-content:nth-child(2) { /* Style the second side content */
-    order: 3; /* Move the second side content to the right */
+    background-color: #d7da3c;
+    clear: both;
   }
 </style>
 </head>
@@ -59,11 +61,7 @@
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-    </ul>
+    <h2>Navigation Menu</h2>
   </nav>
 
   <div class="side-content">
@@ -76,13 +74,13 @@
     <p>This is the main content of the page.</p>
   </main>
 
-  <div class="side-content">
+  <div class="side-content1">
     <h2>Side Content</h2>
-    <p>This is some more side content.</p>
+    <p>This is some side content.</p>
   </div>
 
   <footer>
-    <p>Footer</p>
+    <h3>Footer</h3>
   </footer>
 </body>
 </html>
